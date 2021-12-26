@@ -5,7 +5,8 @@ class UsersController < ApplicationController
         end
         def show
             user = User.find(params[:id])
-            render json:{user:user,goals:user.goals, updates: user.updates }
+            update = Update.where(user_id: user)
+            render json:{user:user,goals:user.goals, update:update}
         end
         def create
             user = User.new(user_params)

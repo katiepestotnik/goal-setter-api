@@ -5,7 +5,11 @@ class GoalsController < ApplicationController
     end
     def show
         goal = Goal.find(params[:id])
-        render json: { status: 200, goal:goal, updates:goal.updates}
+        # render json: { status: 200, goal:goal, updates:goal.updates}
+
+        update = Update.where(goal_id: goal)
+        render json:{status: 200, goal:goal, update:update}
+
     end
     def create
         goal = Goal.new(goal_params)
