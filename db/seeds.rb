@@ -12,14 +12,14 @@
 
 # User.create(username: "Klondike", password: "GR", email: "klondike@gmail.com")
 
-Goal.create(name:"walk", start_date: Date.parse('2020-01-01', '%Y-%m-%d'), goal_completion_date: Date.parse('2020-01-01', '%Y-%m-%d'), goal_description: "walk around the block", user_id: 4, update_id: 1)
+# Goal.create(name:"walk", start_date: Date.parse('2020-01-01', '%Y-%m-%d'), goal_completion_date: Date.parse('2020-01-01', '%Y-%m-%d'), goal_description: "walk around the block", user_id: 4, update_id: 1)
 
-Goal.create(name:"run", start_date: Date.parse('2020-01-01', '%Y-%m-%d'), goal_completion_date: Date.parse('2020-01-01', '%Y-%m-%d'), goal_description: "run around the lake", user_id: 5, update_id: 2)
+# Goal.create(name:"run", start_date: Date.parse('2020-01-01', '%Y-%m-%d'), goal_completion_date: Date.parse('2020-01-01', '%Y-%m-%d'), goal_description: "run around the lake", user_id: 5, update_id: 2)
 
-Goal.create(name:"sit", start_date: Date.parse('2020-01-01', '%Y-%m-%d'), goal_completion_date: Date.parse('2020-01-01', '%Y-%m-%d'), goal_description: "chew on the bone", user_id: 6, update_id: 3)
+# Goal.create(name:"sit", start_date: Date.parse('2020-01-01', '%Y-%m-%d'), goal_completion_date: Date.parse('2020-01-01', '%Y-%m-%d'), goal_description: "chew on the bone", user_id: 6, update_id: 3)
 
-Update.create(actions: "walked", self_evaluation: 10, completed: true, goal_id: 1, user_id: 4)
+Update.create(actions: "walked", self_evaluation: 10, completed: true, goal_id: 7, user_id: 4)
 
-Update.create(actions: "ran", self_evaluation: 7, completed: true, goal_id: 2, user_id: 5)
+Update.create(actions: "ran", self_evaluation: 7, completed: true, goal_id: 8, user_id: 5)
 
-Update.create(actions: "chew", self_evaluation: 10, completed: true, goal_id: 3, user_id: 6)
+Update.create(actions: "chew", self_evaluation: 10, completed: true, goal_id: 9, user_id: 6)
