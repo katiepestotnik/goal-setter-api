@@ -5,27 +5,27 @@ class GoalsController < ApplicationController
     end
     def show
         goal = Goal.find(params[:id])
-        render json: {goal:goal, updates: goal.updates}
+        render json: { status: 200, goal:goal, updates:goal.updates}
     end
     def create
         goal = Goal.new(goal_params)
         if goal.save
-            render(status: 201, json: {goal: goal})
+            render json: {status: 201,goal: goal}
         else
-            render(status: 422, json: {goal:goal, errors:goal.errors})
+            render json: {status: 422, goal:goal, errors:goal.errors}
         end
     end
     def update
         goal = Goal.find(params[:id])
         goal.update(goal_params)
-        render(status: 200, json: {goal:goal})
+        render json: {status: 200, goal:goal}
     end
     def destroy
         goal =Goal.destroy(params[:id])
-        render(status: 204)
+        render json: {status: 204}
     end
     private
     def goal_params
-        params.require(:goal).permit(:name, :start_date, :goal_completion_date, :goal_description)
+        params.require(:goal).permit(:name, :start_date, :goal_completion_date, :goal_description, :user_id, :update_id)
     end
 end
