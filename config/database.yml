@@ -81,6 +81,4 @@ test:
 #
 production:
   <<: *default
-  database: goal_setter_production
-  username: goal_setter
-  password: <%= ENV['GOAL_SETTER_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
