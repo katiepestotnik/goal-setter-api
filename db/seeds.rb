@@ -6,11 +6,11 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-# User.create(username: "Bear", password: "BMD", email: "bear@gmail.com")
+User.create(username: "Bear", password: "BMD", email: "bear@gmail.com")
 
-# User.create(username: "Missy", password: "BMD", email: "missy@gmail.com")
+User.create(username: "Missy", password: "BMD", email: "missy@gmail.com")
 
-# User.create(username: "Klondike", password: "GR", email: "klondike@gmail.com")
+User.create(username: "Klondike", password: "GR", email: "klondike@gmail.com")
 
 # Goal.create(name:"walk", start_date: Date.parse('2020-01-01', '%Y-%m-%d'), goal_completion_date: Date.parse('2020-01-01', '%Y-%m-%d'), goal_description: "walk around the block", user_id: 4, update_id: 1)
 
